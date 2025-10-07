@@ -1,0 +1,1 @@
+# daily-letter-for-Minky
