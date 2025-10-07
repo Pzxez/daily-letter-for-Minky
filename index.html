@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Letter — Countdown to Us</title>
+
+<!-- ฟ้อนต์ไทย -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ฟ้อนต์อังกฤษ minimal -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="header">
+    <div>
+      <h1>Daily Letter</h1>
+      <p class="tag">ข้อความกำลังใจรายวัน ☕💌</p>
+    </div>
+    <div id="countdown" class="countdown">กำลังโหลด...</div>
+  </header>
+
+  <section class="top-area">
+    <div class="pixel-cafe">🍵 😺</div>
+    <div class="intro">
+      <p class="lead">กดช่องวันที่ปลดล็อกเพื่ออ่านจดหมายจากเค้า — วันละหนึ่งข้อความ จนกว่าอ้วนจะสอบเสร็จน้าา 🫶</p>
+    </div>
+  </section>
+  
+  <section id="letterSection">
+    <div id="todayLetter" class="today-letter">📬 วันนี้เบบี๋สามารถเปิดจดหมายได้หลังเที่ยงคืน</div>
+    <div id="pixelFlowerContainer">
+      <img id="pixelFlower" src="assets/pixel_flower.png" alt="Pixel Flower">
+    </div>
+  </section>
+
+  <section>
+    <div id="calendar" class="calendar"></div>
+  </section>
+
+  <!-- modal for letter -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close">✕</button>
+      <h3 id="modalTitle">Letter</h3>
+      <p id="modalBody" class="modal-body"></p>
+      <div class="modal-footer">
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
